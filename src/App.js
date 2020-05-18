@@ -5,16 +5,22 @@ import styles from "./App.module.css";
 import { fetchData } from "./api";
 
 class App extends React.Component {
-  async componentDidMount() {
-    const data = await fetchData();
+  state = {
+    data: {},
+  };
 
-    console.log(data);
+  async componentDidMount() {
+    const fetchData = await fetchData();
+
+    this.setState({ data: fetchData });
   }
 
   render() {
+    const { data } = this.state.data;
+
     return (
       <div className={styles.container}>
-        <Cards />
+        <Cards data={data} />
         <CountryPicker />
         <Chart />
       </div>
