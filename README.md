@@ -1,8 +1,8 @@
 # Covid 19 Tracker
 
-![COVID-19 Tracker]()
+![COVID-19 Tracker](https://github.com/scriptjumper/covid-19-tracker/blob/master/src/images/homepage.png)
 
-### [Live Site]()
+### [Live Site](https://latest-covid-19-status.netlify.app/)
 
 ## Introduction
 
